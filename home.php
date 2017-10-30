@@ -2,7 +2,7 @@
   ob_start();
   session_start();
   require_once 'dbconnect.php';
-  
+
   // if session is not set this will redirect to login page
   if( !isset($_SESSION['user']) ) {
     header("Location: index.php");
@@ -30,7 +30,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">    
+    <meta name="author" content="">
     <meta http-equiv="Content-Language" content="en-us">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link rel="icon" href="images/favicon.png">
@@ -45,9 +45,9 @@
     <script src="js/ie-emulation-modes-warning.js"></script>
     <link href="style/home.css" rel="stylesheet" type="text/css" />
     <script src="js/change.js"></script>
-	
+
 	<style>
-		
+
 		.button1:hover {
 			background-color: #3e8e41
 		 }
@@ -81,7 +81,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
 
           <ul class="nav navbar-nav navbar-right">
-            
+
             <li class="active">
               <a href="#" class="navbar-brand" data-toggle="active" role="button" aria-haspopup="true" aria-expanded="true">
                     <span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $userRow['useremail']; ?>&nbsp;
@@ -92,7 +92,7 @@
 
                 <li><a href="about.html" target="_blank">About</a></li>
 
-               
+
 
                 <li ><a href="logout.php?logout" class="active">&nbsp;Sign Out</a></li>
 
@@ -100,7 +100,7 @@
 
             </li>
           </ul>
-  
+
         </div>
       </div>
      </nav>
@@ -117,7 +117,7 @@
         <br>
         <br>
         <a href="javascript:stage1()" class="list-group-item" class="font1">
-            <span class="font1"> Stage 1 </span><span class="badge" >10</span>
+            <span class="font1"> Stage 1 </span><span class="badge" >20</span>
         </a>
         <br>
         <a href="javascript:stage2()" class="list-group-item">
@@ -140,14 +140,11 @@
     </div>
    </div>
   <div class="col-md-8">
-  <iframe class="othtml" src="about.html" name="frame">  
- </iframe> 
+  <iframe class="othtml" src="about.html" name="frame">
+ </iframe>
  </div>
-	
-</div> 
+
+</div>
 </body>
-</html>                                   
+</html>
 <?php ob_end_flush(); ?>
-
-
-

@@ -113,13 +113,5 @@
 
 			</div>
 
-
-  <footer>     <div align="center">
-  <font color="#fff">
-	 	<b> &copy</b> Copyright&nbsp;@&nbsp;&nbsp;<b>W_Tech_C - 2017 ...</b>&nbsp;&nbsp;&nbsp;&nbsp; Developed by <b>Sabeel k m :: sabeelmuttil@gmail.com</b>
-    </font>
-		</div>
-   </footer>
-
   </body>
 </html>

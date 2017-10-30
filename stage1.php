@@ -6,11 +6,11 @@
 	$error = false;
 	$res=mysql_query("SELECT * FROM users WHERE userid=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
-	$nam=$userRow['username'];	
+	$nam=$userRow['username'];
 
-	if ( isset($_POST['btn-submit']) ) 
+	if ( isset($_POST['btn-submit']) )
 	{
-		
+
 		// clean user inputs to prevent sql injections
 		$an1 = trim($_POST['an1']);
 		$an1 = strip_tags($an1);
@@ -28,7 +28,7 @@
 		{
 			$an1 ="0";
 		}
-		
+
 		$an2 = trim($_POST['an2']);
 		$an2 = strip_tags($an2);
 		$an2 = htmlspecialchars($an2);
@@ -45,7 +45,7 @@
 		{
 			$an2 ="0";
 		}
-		
+
 		$an3 = trim($_POST['an3']);
 		$an3 = strip_tags($an3);
 		$an3 = htmlspecialchars($an3);
@@ -62,7 +62,7 @@
 		{
 			$an3 ="0";
 		}
-		
+
 		$an4 = trim($_POST['an4']);
 		$an4 = strip_tags($an4);
 		$an4 = htmlspecialchars($an4);
@@ -79,7 +79,7 @@
 		{
 			$an4 ="0";
 		}
-		
+
 		$an5 = trim($_POST['an5']);
 		$an5 = strip_tags($an5);
 		$an5 = htmlspecialchars($an5);
@@ -96,7 +96,7 @@
 		{
 			$an5 ="0";
 		}
-		
+
 		$an6 = trim($_POST['an6']);
 		$an6 = strip_tags($an6);
 		$an6 = htmlspecialchars($an6);
@@ -113,7 +113,7 @@
 		{
 			$an6 ="0";
 		}
-		
+
 		$an7 = trim($_POST['an7']);
 		$an7 = strip_tags($an7);
 		$an7 = htmlspecialchars($an7);
@@ -130,7 +130,7 @@
 		{
 			$an7 ="0";
 		}
-		
+
 		$an8 = trim($_POST['an8']);
 		$an8 = strip_tags($an8);
 		$an8 = htmlspecialchars($an8);
@@ -147,7 +147,7 @@
 		{
 			$an8 ="0";
 		}
-		
+
 		$an9 = trim($_POST['an9']);
 		$an9 = strip_tags($an9);
 		$an9 = htmlspecialchars($an9);
@@ -164,7 +164,7 @@
 		{
 			$an9 ="0";
 		}
-		
+
 		$an10 = trim($_POST['an10']);
 		$an10 = strip_tags($an10);
 		$an10 = htmlspecialchars($an10);
@@ -181,15 +181,15 @@
 		{
 			$an10 ="0";
 		}
-/* --------------------------------------------------------------*/		
-	
+/* --------------------------------------------------------------*/
+
 		 if(!empty($nam))
 		 	{
 			// check data exist or not
 				$query = "SELECT first FROM stg1 WHERE username='$nam'";
 				$result = mysql_query($query);
 				$count = mysql_num_rows($result);
-				
+
 			  	if($count!=0)
 			  	{
 					$error1 = true;
@@ -199,7 +199,7 @@
 				$query1 = "SELECT * FROM reslt WHERE name='$nam'";
 				$result1 = mysql_query($query1);
 				$count1 = mysql_num_rows($result1);
-				
+
 			  	if($count1!=0)
 			  	{
 					$err1 = true;
@@ -208,28 +208,28 @@
 			}
 		$tot=$an1 + $an2 + $an3 + $an4 + $an5 + $an6 + $an7 + $an8 + $an9 + $an10;
 		 // if there's no error, continue to data entry
-		 if( !$error1  ) 
+		 if( !$error1  )
 		 {
 			 //$ans=1;
 			$query = "INSERT INTO stg1(username,first,two,three,four,five,six,seven,eight,nine,ten,tot) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10','$tot')";
 			$res = mysql_query($query);
-				
+
 			if ($conn->$res===true) {
 				$errTyp = "success";
 				$errMSG = "Successfully entered datas";
 				//unset($an1);
-				
+
 			}
-			 else 
+			 else
 			 {
 				$errTyp = "danger";
-				$errMSG = "Network problem , try again later...";	
-			 }	
-				
-		 }
-	  	
+				$errMSG = "Network problem , try again later...";
+			 }
 
-	}	
+		 }
+
+
+	}
 ?>
 
 
@@ -242,251 +242,702 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/ie-emulation-modes-warning.js"></script>
-	<script src="js/change.js"></script>
-	<script src="js/time.js"></script>
 
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">    
+    <meta name="author" content="">
     <meta http-equiv="Content-Language" content="en-us">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
     <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css"  />
-    <link href="style/bootstrap.min.css" rel="stylesheet">
-    <link href="style/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="style/signin.css" rel="stylesheet">
-    <link href="style/home.css" rel="stylesheet" type="text/css" />
-    <link href="style/stage1.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body >
-	
-	
-	<div>
- 		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="on">
-			
-   			<div class="list-group-item" class="font1">
-				<p> 1. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</p>
-	   				<div class="opt">
-	   					<ul>
-		   					<li>java script </li>
-		   					<li>JQuery		</li>
-		   					<li>node js		</li>
-		   					<li>Ajax		</li>
-						</ul>
-	   				</div>   
-					
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
-						<br>
-						
-					</div>
-   			</div>
-   			<br>
+<style>
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #f1f1f1;
+}
+#regForm {
+	background-color: #ffffff;
+	margin: 100px auto;
+	font-family: Raleway;
+	padding: 40px;
+	width: 50%;
+	min-width: 300px;
+}
+h1 {
+	text-align: center;
+}
+input {
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+	font-family: Raleway;
+	border: 1px solid #aaaaaa;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color: #ffdddd;
+}
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+button {
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+}
+button:hover {
+	opacity: 0.8;
+}
+#prevBtn {
+	background-color: #bbbbbb;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+.step.active {
+	opacity: 1;
+}
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: #4CAF50;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
-   			<div class="list-group-item" class="font1">
-				<p> 2. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</p>
-	   			<div class="opt">	
-					<ul>
-						<li>Lence Amblitude by Stimulated Emulssion of Radiation</li>  
-						<li>Light Amblification by Stimulated Emission of Radiation</li> 
-						<li>Light Amblitude by System Emulssion of Range</li> 
-     				    <li>Lence Amblification by State Emission of Rase</li>
-					</ul>
-				</div>
-    			<div align="center">
-					<input class="_6v " type="text" placeholder="Your Answer" name="an2">
-					<br>
-						
-	
-				</div>
-   			</div>
-   			<br> 
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+}
 
-   			<div class="list-group-item" class="font1">
-				<p> 3. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</p>
-				<div class="opt">
-	   				<ul>
-						<li>Windows	 </li>
-						<li>Microsoft</li>
-						<li>Infosys  </li> 
-						<li>Wipro	 </li>
-	
-       				</ul>
-				</div>
-				<div align="center">
-					<input class="_6v " type="text" placeholder="Your Answer" name="an3">
-					<br>
-						
-	
-				</div>
-   			</div>
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+
+ 		<form id="regForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="on">
+			<h1>Stage 1</h1>
+			<div class="tab">
+				<h3 > 1. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+						<label class="container">java script
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">JQuery
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">node js
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Ajax
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
    			<br>
-   
-   			<div class="list-group-item" class="font1">
-				<p> 4. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
-	   			<div class="opt">
-	   				<ul>
-						<li>X1		 </li>
-						<li>N73		 </li>
-						<li>Lumia 540</li> 
-						<li>nokia 101</li>
-       				</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an4">
-						<br>
-						
-	
-					</div>
-   				</div>
-			</div> 
-   			<br>
-   			<div class="list-group-item" class="font1">
-				<p> 5. primary Memmory യുടെ മറ്റൊരു നാമം ?</p>
-	   			<div class="opt">
-	   				<ul>
-						<li>Hard disc   </li>
-						<li>Pen drive   </li>
-						<li>C drive     </li>
-						<li>Main memmory</li>
-	
-       				</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an5">
-						<br>
-						
-	
-					</div>
-   				</div>
 			</div>
-   			<br>
-   
-   			<div class="list-group-item" class="font1">
-				<p> 6. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </p>
-	   			<div class="opt">
-	   				<ul>
-						<li>Mr Dagan nor         </li>
-						<li>Herman Hollerith	 </li>
-						<li>Mr Alan Thomas       </li> 
-						<li>Dr Aboorna Jodrimayi </li> 
-	
-       				</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an6">
-						<br>
-						
-	
-					</div>
-				</div>
-			</div>
-   			<br>  
-   
-   			<div class="list-group-item" class="font1">
-				<p> 7. OCR ൻ്റെ പൂർണരൂപം ?</p>
-	   			<div class="opt">
-					<ul>
-						<li>Opening Chapter Reading  </li>
-						<li>Object Charecter Renaming</li>
-						<li>Object Chapter Reader    </li>
-						<li>Object Charecter Reader  </li> 
-	
-       				</ul>
-	 				<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an7">
-						<br>
-						
-	
-					</div>
-				</div>
-			</div>
+
+			<div class="tab">
+				<h3 > 2. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
+					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Light Amblification by Stimulated Emission of Radiation
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Light Amblitude by System Emulssion of Range
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Lence Amblification by State Emission of Rase
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
 			<br>
+		</div>
 
-			<div class="list-group-item" class="font1">
-				<p> 8. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</p>
-				<div class="opt">
-					<ul>
-						<li>Commannd Class	</li>
-						<li>Command Case	</li>
-						<li>Carbon Copy		</li> 
-						<li>Carbon Case		</li>
-	
-					</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an8">
-						<br>
-						
-	
-					</div>
+		<div class="tab">
+			<h3 > 3. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</h3>
+	   				<label class="container">Windows
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Microsoft
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Infosys
+						<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Wipro
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
 				</div>
+
+				<div class="tab">
+					<h3 > 4. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
+
+							<label class="container">X1
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">N73
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Lumia 540
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Nokia 101
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+
 			</div>
-   			<br>    
-   
-			<div class="list-group-item" class="font1">
-				<p> 9. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</p>
-				<div class="opt">
-					<ul>
-						<li>ZYGONET  </li> 
-						<li>CORPANET </li>
-						<li>ARPANET  </li> 
-						<li>SUPERNET </li>
-	
-					</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an9">
-						<br>
-						
-	
+
+			<div class="tab">
+				<h3 > 5. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
+
+				<label class="container">Hard disc
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Pen drive
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">C drive
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Main memmory
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+
+
+			<div class="tab">
+				<h3 > 6. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
+
+				<label class="container">Mr Dagan nor
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Herman Hollerith
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Mr Alan Thomas
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Dr Aboorna Jodrimayi
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+
+
+			<div class="tab">
+				<h3 > 7. OCR ൻ്റെ പൂർണരൂപം ?</h3>
+
+				<label class="container">Opening Chapter Reading
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Charecter Renaming
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Chapter Reader
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Charecter Reader
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
 					</div>
-				</div>
+
+
+					<div class="tab">
+						<h3 > 8. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
+
+						<label class="container">Commannd Class
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Command Case
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Carbon Copy
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Carbon Case
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+
+					</div>
+
+					<div class="tab">
+						<h3 > 9. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
+
+						<label class="container">ZYGONET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">CORPANET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">ARPANET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">SUPERNET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+
 			</div>
+
+
+			<div class="tab">
+				<h3 > 10. 1 Mega bits = _____ Kilo bytes ?</h3>
+
+				<label class="container">1024 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">1000 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">125 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">135 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+			<div class="tab">
+				<h3 > 11. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+						<label class="container">java script
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">JQuery
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">node js
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Ajax
+							<input type="radio" name="an1">
+							<span class="checkmark"></span>
+						</label>
+   			<br>
+			</div>
+
+			<div class="tab">
+				<h3 > 12. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
+					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Light Amblification by Stimulated Emission of Radiation
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Light Amblitude by System Emulssion of Range
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Lence Amblification by State Emission of Rase
+						<input type="radio" name="an2">
+						<span class="checkmark"></span>
+					</label>
 			<br>
+		</div>
 
-			<div class="list-group-item" class="font1">
-				<p> 10. 1 Mega bits = _____ Kilo bytes ?</p>
-				<div class="opt">
-					<ul>
-						<li>1024 Kilo bytes	</li>
-						<li>1000 Kilo bytes	</li>
-						<li>125 Kilo bytes 	</li>
-						<li>135 Kilo bytes	</li>
-	
-					</ul>
-					<div align="center">
-						<input class="_6v " type="text" placeholder="Your Answer" name="an10">
-						<br>
-						
-	
+		<div class="tab">
+			<h3 > 13. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</h3>
+	   				<label class="container">Windows
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Microsoft
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Infosys
+						<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Wipro
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+				</div>
+
+				<div class="tab">
+					<h3 > 14. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
+
+							<label class="container">X1
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">N73
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Lumia 540
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">Nokia 101
+								<input type="radio" name="an2">
+								<span class="checkmark"></span>
+							</label>
+
+			</div>
+
+			<div class="tab">
+				<h3 > 15. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
+
+				<label class="container">Hard disc
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Pen drive
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">C drive
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Main memmory
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+
+
+			<div class="tab">
+				<h3 > 16. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
+
+				<label class="container">Mr Dagan nor
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Herman Hollerith
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Mr Alan Thomas
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Dr Aboorna Jodrimayi
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+
+
+			<div class="tab">
+				<h3 > 17. OCR ൻ്റെ പൂർണരൂപം ?</h3>
+
+				<label class="container">Opening Chapter Reading
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Charecter Renaming
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Chapter Reader
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Object Charecter Reader
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+					</div>
+
+
+					<div class="tab">
+						<h3 > 18. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
+
+						<label class="container">Commannd Class
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Command Case
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Carbon Copy
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">Carbon Case
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
 
 					</div>
+
+					<div class="tab">
+						<h3 > 19. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
+
+						<label class="container">ZYGONET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">CORPANET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">ARPANET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container">SUPERNET
+							<input type="radio" name="an2">
+							<span class="checkmark"></span>
+						</label>
+
+			</div>
+
+
+			<div class="tab">
+				<h3 > 20. 1 Mega bits = _____ Kilo bytes ?</h3>
+
+				<label class="container">1024 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">1000 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">125 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">135 Kilo bytes
+					<input type="radio" name="an2">
+					<span class="checkmark"></span>
+				</label>
+
+			</div>
+
+			<div style="overflow:auto;">
+				<div style="float:right;">
+					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 				</div>
 			</div>
-			<br>
-			
-			<div align="center" >
-				<?php  echo "<div style='color:red;'> $stg1Error</div>" ?>
-				<br>
-	  			<button class="bttn" type="submit" name="btn-submit" >Submit Answer</button>
+			<div class="tab">
+				<h3 >Final Submit</h3>
+				<div style="float:centre;">
+					<button type="button" name="btn-submit" id="nextBtn">Submit</button>
+				</div>
 			</div>
-		</form>
+<div style="text-align:center;margin-top:40px;">
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+	<span class="step"></span>
+</div
+	</form>
+	<script>
+	var currentTab = 0; // Current tab is set to be the first tab (0)
+	showTab(currentTab); // Display the crurrent tab
 
-   		<footer>     
-			<div align="center">
-				<font color="black">
-					<b> &copy</b> Copyright&nbsp;@&nbsp;&nbsp;<b>W_Tech_C - 2016 ...</b>&nbsp;&nbsp;&nbsp;&nbsp; Developed by <b>Sabeel k m :: sabeelmuttil@gmail.com</b> 
-				</font>
-			</div>
-		</footer> 
+	function showTab(n) {
+	  // This function will display the specified tab of the form...
+	  var x = document.getElementsByClassName("tab");
+	  x[n].style.display = "block";
+	  //... and fix the Previous/Next buttons:
+	  if (n == 0) {
+	    document.getElementById("prevBtn").style.display = "none";
+	  } else {
+	    document.getElementById("prevBtn").style.display = "inline";
+	  }
+	  if (n == (x.length - 1)) {
+	    document.getElementById("nextBtn").innerHTML = "Submit";
+	  } else {
+	    document.getElementById("nextBtn").innerHTML = "Next";
+	  }
+	  //... and run a function that will display the correct step indicator:
+	  fixStepIndicator(n)
+	}
 
-	</div> 
-    
+	function nextPrev(n) {
+	  // This function will figure out which tab to display
+	  var x = document.getElementsByClassName("tab");
+	  // Exit the function if any field in the current tab is invalid:
+	  if (n == 1 && !validateForm()) return false;
+	  // Hide the current tab:
+	  x[currentTab].style.display = "none";
+	  // Increase or decrease the current tab by 1:
+	  currentTab = currentTab + n;
+	  // if you have reached the end of the form...
+	  if (currentTab >= x.length) {
+	    // ... the form gets submitted:
+	    document.getElementById("regForm").submit();
+	    return false;
+	  }
+	  // Otherwise, display the correct tab:
+	  showTab(currentTab);
+	}
+
+	function validateForm() {
+	  // This function deals with validation of the form fields
+	  var x, y, i, valid = true;
+	  x = document.getElementsByClassName("tab");
+	  y = x[currentTab].getElementsByTagName("input");
+	  // A loop that checks every input field in the current tab:
+	  for (i = 0; i < y.length; i++) {
+	    // If a field is empty...
+	    if (y[i].value == "") {
+	      // add an "invalid" class to the field:
+	      y[i].className += " invalid";
+	      // and set the current valid status to false
+	      valid = false;
+	    }
+	  }
+	  // If the valid status is true, mark the step as finished and valid:
+	  if (valid) {
+	    document.getElementsByClassName("step")[currentTab].className += " finish";
+	  }
+	  return valid; // return the valid status
+	}
+
+	function fixStepIndicator(n) {
+	  // This function removes the "active" class of all steps...
+	  var i, x = document.getElementsByClassName("step");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].className = x[i].className.replace(" active", "");
+	  }
+	  //... and adds the "active" class on the current step:
+	  x[n].className += " active";
+	}
+	</script>
+
 </body>
 </html>
 <?php ob_end_flush(); ?>
