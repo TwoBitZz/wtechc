@@ -830,16 +830,10 @@ button:hover {
 
 			<div style="overflow:auto;">
 				<div style="float:right;">
-					<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-					<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+					<button type="button" name="btn-submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
 				</div>
 			</div>
-			<div class="tab">
-				<h3 >Final Submit</h3>
-				<div style="float:centre;">
-					<button type="button" name="btn-submit" id="nextBtn">Submit</button>
-				</div>
-			</div>
+			
 <div style="text-align:center;margin-top:40px;">
 	<span class="step"></span>
 	<span class="step"></span>
