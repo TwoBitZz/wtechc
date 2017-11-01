@@ -11,141 +11,204 @@
 	if ( isset($_POST['btn-submit']) )
 	{
 
-		// clean user inputs to prevent sql injections
-		$an1 = trim($_POST['an1']);
-		$an1 = strip_tags($an1);
-		$an1 = htmlspecialchars($an1);
-		if($an1=="node js")
+		if(isset($_POST['an1']))
 		{
-			$an1 ="1";
-		}
-		else if (empty($an1))
-		 {
-			$error = true;
-			$an1 ="0";
-		 }
-		else
-		{
-			$an1 ="0";
+				$an1 = $_POST['an1'];
+
+				 if ($an1 == "node js")
+				 {
+					 $an1 = "1";
+				 }
+				 else if (empty($an1))
+		 		 {
+		 			$error = true;
+		 			$an1 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an1 ="0";
+		 			}
+
 		}
 
-		$an2 = trim($_POST['an2']);
-		$an2 = strip_tags($an2);
-		$an2 = htmlspecialchars($an2);
-		if($an2=="Light Amblification by Stimulated Emission of Radiation")
+		if(isset($_POST['an2']))
 		{
-			$an2 ="1";
-		}
-		else if (empty($an2))
-		 {
-			$error = true;
-			$an2 ="0";
-		 }
-		else
-		{
-			$an2 ="0";
+				$an2 = $_POST['an2'];
+
+				 if ($an2 == "Light Amblification by Stimulated Emission of Radiation")
+				 {
+					 $an2 = "1";
+				 }
+				 else if (empty($an2))
+		 		 {
+		 			$error = true;
+		 			$an2 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an2 ="0";
+		 			}
+
 		}
 
-		$an3 = trim($_POST['an3']);
-		$an3 = strip_tags($an3);
-		$an3 = htmlspecialchars($an3);
-		if($an3=="Microsoft")
+		if(isset($_POST['an3']))
 		{
-			$an3 ="1";
-		}
-		else if (empty($an3))
-		 {
-			$error = true;
-			$an3 ="0";
-		 }
-		else
-		{
-			$an3 ="0";
+				$an3 = $_POST['an3'];
+
+				 if ($an3 == "Microsoft")
+				 {
+					 $an3 = "1";
+				 }
+				 else if (empty($an3))
+		 		 {
+		 			$error = true;
+		 			$an3 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an3 ="0";
+		 			}
+
 		}
 
-		$an4 = trim($_POST['an4']);
-		$an4 = strip_tags($an4);
-		$an4 = htmlspecialchars($an4);
-		if($an4=="X1")
+		if(isset($_POST['an4']))
 		{
-			$an4 ="1";
-		}
-		else if (empty($an4))
-		 {
-			$error = true;
-			$an4 ="0";
-		 }
-		else
-		{
-			$an4 ="0";
+				$an4 = $_POST['an4'];
+
+				 if ($an4 == "X1")
+				 {
+					 $an4 = "1";
+				 }
+				 else if (empty($an4))
+		 		 {
+		 			$error = true;
+		 			$an4 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an4 ="0";
+		 			}
+
 		}
 
-		$an5 = trim($_POST['an5']);
-		$an5 = strip_tags($an5);
-		$an5 = htmlspecialchars($an5);
-		if($an5=="Main memmory")
+		if(isset($_POST['an5']))
 		{
-			$an5 ="1";
-		}
-		else if (empty($an5))
-		 {
-			$error = true;
-			$an5 ="0";
-		 }
-		else
-		{
-			$an5 ="0";
+				$an5 = $_POST['an5'];
+
+				 if ($an5 == "Main memmory")
+				 {
+					 $an5 = "1";
+				 }
+				 else if (empty($an5))
+		 		 {
+		 			$error = true;
+		 			$an5 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an5 ="0";
+		 			}
+
 		}
 
-		$an6 = trim($_POST['an6']);
-		$an6 = strip_tags($an6);
-		$an6 = htmlspecialchars($an6);
-		if($an6=="Herman Hollerith")
+		if(isset($_POST['an6']))
 		{
-			$an6 ="1";
-		}
-		else if (empty($an6))
-		 {
-			$error = true;
-			$an6 ="0";
-		 }
-		else
-		{
-			$an6 ="0";
+				$an6 = $_POST['an6'];
+
+				 if ($an6 == "Herman Hollerith")
+				 {
+					 $an6 = "1";
+				 }
+				 else if (empty($an6))
+		 		 {
+		 			$error = true;
+		 			$an6 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an6 ="0";
+		 			}
+
 		}
 
-		$an7 = trim($_POST['an7']);
-		$an7 = strip_tags($an7);
-		$an7 = htmlspecialchars($an7);
-		if($an7=="Object Charecter Reader")
+		if(isset($_POST['an7']))
 		{
-			$an7 ="1";
-		}
-		else if (empty($an7))
-		 {
-			$error = true;
-			$an7 ="0";
-		 }
-		else
-		{
-			$an7 ="0";
+				$an7 = $_POST['an7'];
+
+				 if ($an7 == "Object Charecter Reader")
+				 {
+					 $an7 = "1";
+				 }
+				 else if (empty($an7))
+		 		 {
+		 			$error = true;
+		 			$an7 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an7 ="0";
+		 			}
+
 		}
 
-		$an8 = trim($_POST['an8']);
-		$an8 = strip_tags($an8);
-		$an8 = htmlspecialchars($an8);
-		if($an8=="Carbon Copy")
+		if(isset($_POST['an8']))
 		{
-			$an8 ="1";
+				$an8 = $_POST['an8'];
+
+				 if ($an8 == "Carbon Copy")
+				 {
+					 $an8 = "1";
+				 }
+				 else if (empty($an8))
+		 		 {
+		 			$error = true;
+		 			$an8 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an8 ="0";
+		 			}
+
 		}
-		else if (empty($an8))
-		 {
-			$error = true;
-			$an8 ="0";
-		 }
-		else
+
+		if(isset($_POST['an9']))
 		{
-			$an8 ="0";
+				$an9 = $_POST['an9'];
+
+				 if ($an9 == "Object Charecter Reader")
+				 {
+					 $an9 = "1";
+				 }
+				 else if (empty($an9))
+		 		 {
+		 			$error = true;
+		 			$an9 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an9 ="0";
+		 			}
+
+		}
+
+		if(isset($_POST['an10']))
+		{
+				$an10 = $_POST['an10'];
+
+				 if ($an10 == "Carbon Copy")
+				 {
+					 $an10 = "1";
+				 }
+				 else if (empty($an10))
+		 		 {
+		 			$error = true;
+		 			$an10 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an10 ="0";
+		 			}
+
 		}
 
 		$an9 = trim($_POST['an9']);
