@@ -175,7 +175,7 @@
 		{
 				$an9 = $_POST['an9'];
 
-				 if ($an9 == "Object Charecter Reader")
+				 if ($an9 == "ARPANET")
 				 {
 					 $an9 = "1";
 				 }
@@ -195,7 +195,7 @@
 		{
 				$an10 = $_POST['an10'];
 
-				 if ($an10 == "Carbon Copy")
+				 if ($an10 == "125 Kilo bytes")
 				 {
 					 $an10 = "1";
 				 }
@@ -211,41 +211,8 @@
 
 		}
 
-		$an9 = trim($_POST['an9']);
-		$an9 = strip_tags($an9);
-		$an9 = htmlspecialchars($an9);
-		if($an9=="ARPANET")
-		{
-			$an9 ="1";
-		}
-		else if (empty($an9))
-		 {
-			$error = true;
-			$an9 ="0";
-		 }
-		else
-		{
-			$an9 ="0";
-		}
 
-		$an10 = trim($_POST['an10']);
-		$an10 = strip_tags($an10);
-		$an10 = htmlspecialchars($an10);
-		if($an10=="125 Kilo bytes")
-		{
-			$an10 ="1";
-		}
-		else if (empty($an10))
-		 {
-			$error = true;
-			$an10 ="0";
-		 }
-		else
-		{
-			$an10 ="0";
-		}
-
-		$an11 = trim($_POST['an11']);
+		/*$an11 = trim($_POST['an11']);
 		$an11 = strip_tags($an11);
 		$an11 = htmlspecialchars($an11);
 		if($an11=="node js")
@@ -413,7 +380,7 @@
 		else
 		{
 			$an20 ="0";
-		}
+		}*/
 /* --------------------------------------------------------------*/
 
 		 if(!empty($nam))
