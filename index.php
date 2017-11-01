@@ -74,7 +74,7 @@
     <link href="style/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <script src="js/ie-emulation-modes-warning.js"></script>
-    <link href="style/Style1.css" rel="stylesheet" type="text/css" />
+    <link href="style/style1.css" rel="stylesheet" type="text/css" />
     <script src="js/func.js"></script>
 
     <script type="text/javascript" src="js/jquery.js"></script>
