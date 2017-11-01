@@ -181,6 +181,176 @@
 		{
 			$an10 ="0";
 		}
+
+		$an11 = trim($_POST['an11']);
+		$an11 = strip_tags($an11);
+		$an11 = htmlspecialchars($an11);
+		if($an11=="node js")
+		{
+			$an11 ="1";
+		}
+		else if (empty($an11))
+		 {
+			$error = true;
+			$an11 ="0";
+		 }
+		else
+		{
+			$an11 ="0";
+		}
+
+		$an12 = trim($_POST['an12']);
+		$an12 = strip_tags($an12);
+		$an12 = htmlspecialchars($an12);
+		if($an12=="Light Amblification by Stimulated Emission of Radiation")
+		{
+			$an12 ="1";
+		}
+		else if (empty($an12))
+		 {
+			$error = true;
+			$an12 ="0";
+		 }
+		else
+		{
+			$an12 ="0";
+		}
+
+		$an13 = trim($_POST['an13']);
+		$an13 = strip_tags($an13);
+		$an13 = htmlspecialchars($an13);
+		if($an13=="Microsoft")
+		{
+			$an13 ="1";
+		}
+		else if (empty($an13))
+		 {
+			$error = true;
+			$an13 ="0";
+		 }
+		else
+		{
+			$an13 ="0";
+		}
+
+		$an14 = trim($_POST['an14']);
+		$an14 = strip_tags($an14);
+		$an14 = htmlspecialchars($an14);
+		if($an14=="X1")
+		{
+			$an14 ="1";
+		}
+		else if (empty($an14))
+		 {
+			$error = true;
+			$an14 ="0";
+		 }
+		else
+		{
+			$an14 ="0";
+		}
+
+		$an15 = trim($_POST['an15']);
+		$an15 = strip_tags($an15);
+		$an15 = htmlspecialchars($an15);
+		if($an15=="Main memmory")
+		{
+			$an15 ="1";
+		}
+		else if (empty($an15))
+		 {
+			$error = true;
+			$an15 ="0";
+		 }
+		else
+		{
+			$an15 ="0";
+		}
+
+		$an16 = trim($_POST['an16']);
+		$an16 = strip_tags($an16);
+		$an16 = htmlspecialchars($an16);
+		if($an16=="Herman Hollerith")
+		{
+			$an16 ="1";
+		}
+		else if (empty($an16))
+		 {
+			$error = true;
+			$an16 ="0";
+		 }
+		else
+		{
+			$an16 ="0";
+		}
+
+		$an17 = trim($_POST['an17']);
+		$an17 = strip_tags($an17);
+		$an17 = htmlspecialchars($an17);
+		if($an17=="Object Charecter Reader")
+		{
+			$an17 ="1";
+		}
+		else if (empty($an17))
+		 {
+			$error = true;
+			$an17 ="0";
+		 }
+		else
+		{
+			$an17 ="0";
+		}
+
+		$an18 = trim($_POST['an18']);
+		$an18 = strip_tags($an18);
+		$an18 = htmlspecialchars($an18);
+		if($an18=="Carbon Copy")
+		{
+			$an18 ="1";
+		}
+		else if (empty($an18))
+		 {
+			$error = true;
+			$an18 ="0";
+		 }
+		else
+		{
+			$an18 ="0";
+		}
+
+		$an19 = trim($_POST['an19']);
+		$an19 = strip_tags($an19);
+		$an19 = htmlspecialchars($an19);
+		if($an19=="ARPANET")
+		{
+			$an19 ="1";
+		}
+		else if (empty($an19))
+		 {
+			$error = true;
+			$an19 ="0";
+		 }
+		else
+		{
+			$an19 ="0";
+		}
+
+		$an20 = trim($_POST['an20']);
+		$an20 = strip_tags($an20);
+		$an20 = htmlspecialchars($an20);
+		if($an20=="125 Kilo bytes")
+		{
+			$an20 ="1";
+		}
+		else if (empty($an10))
+		 {
+			$error = true;
+			$an20 ="0";
+		 }
+		else
+		{
+			$an20 ="0";
+		}
 /* --------------------------------------------------------------*/
 
 		 if(!empty($nam))
@@ -206,12 +376,14 @@
 					$rsltError = "Answer is already exist";
 				}*/
 			}
-		$tot=$an1 + $an2 + $an3 + $an4 + $an5 + $an6 + $an7 + $an8 + $an9 + $an10;
-		 // if there's no error, continue to data entry
+			$tot=$an1 + $an2 + $an3 + $an4 + $an5 + $an6 + $an7 + $an8 + $an9 + $an10 + $an11 + $an12 + $an13 + $an14 + $an15 + $an16 + $an17 + $an18 + $an19 + $an20 ;
+			 // if there's no error, continue to data entry
 		 if( !$error1  )
 		 {
 			 //$ans=1;
-			$query = "INSERT INTO stg1(username,first,two,three,four,five,six,seven,eight,nine,ten,tot) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10','$tot')";
+
+			$query = "INSERT INTO stg1(username,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,tot) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10','$an11','$an12','$an13','$an14','$an15','$an16','$an17','$an18','$an19','$an20','$tot')";
+
 			$res = mysql_query($query);
 
 			if ($conn->$res===true) {
@@ -309,8 +481,8 @@ button:hover {
 }
 /* Make circles that indicate the steps of the form: */
 .step {
-	height: 15px;
-	width: 15px;
+	height: 9px;
+	width: 9px;
 	margin: 0 2px;
 	background-color: #bbbbbb;
 	border: none;
@@ -394,19 +566,19 @@ button:hover {
 			<div class="tab">
 				<h3 > 1. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
 						<label class="container">java script
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an1">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">JQuery
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an1">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">node js
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an1">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Ajax
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an1">
 							<span class="checkmark"></span>
 						</label>
    			<br>
@@ -415,19 +587,19 @@ button:hover {
 			<div class="tab">
 				<h3 > 2. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
 					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an2">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Light Amblification by Stimulated Emission of Radiation
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an2">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Light Amblitude by System Emulssion of Range
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an2">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Lence Amblification by State Emission of Rase
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an2">
 						<span class="checkmark"></span>
 					</label>
 			<br>
@@ -436,19 +608,19 @@ button:hover {
 		<div class="tab">
 			<h3 > 3. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</h3>
 	   				<label class="container">Windows
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an3">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Microsoft
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an3">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Infosys
-						<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an3">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Wipro
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an3">
 							<span class="checkmark"></span>
 						</label>
 				</div>
@@ -457,19 +629,19 @@ button:hover {
 					<h3 > 4. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
 
 							<label class="container">X1
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an4">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">N73
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an4">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Lumia 540
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an4">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Nokia 101
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an4">
 								<span class="checkmark"></span>
 							</label>
 
@@ -479,19 +651,19 @@ button:hover {
 				<h3 > 5. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
 
 				<label class="container">Hard disc
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an5">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Pen drive
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an5">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">C drive
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an5">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Main memmory
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an5">
 					<span class="checkmark"></span>
 				</label>
 
@@ -502,19 +674,19 @@ button:hover {
 				<h3 > 6. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
 
 				<label class="container">Mr Dagan nor
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an6">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Herman Hollerith
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an6">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Mr Alan Thomas
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an6">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Dr Aboorna Jodrimayi
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an6">
 					<span class="checkmark"></span>
 				</label>
 
@@ -525,19 +697,19 @@ button:hover {
 				<h3 > 7. OCR ൻ്റെ പൂർണരൂപം ?</h3>
 
 				<label class="container">Opening Chapter Reading
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an7">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Charecter Renaming
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an7">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Chapter Reader
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an7">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Charecter Reader
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an7">
 					<span class="checkmark"></span>
 				</label>
 					</div>
@@ -547,19 +719,19 @@ button:hover {
 						<h3 > 8. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
 
 						<label class="container">Commannd Class
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an8">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Command Case
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an8">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Carbon Copy
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an8">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Carbon Case
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an8">
 							<span class="checkmark"></span>
 						</label>
 
@@ -569,19 +741,19 @@ button:hover {
 						<h3 > 9. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
 
 						<label class="container">ZYGONET
-							<input type="radio" name="an2">
+							<input type="radio"value="ZYGONET" name="an9">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">CORPANET
-							<input type="radio" name="an2">
+							<input type="radio" value="CORPANET" name="an9">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">ARPANET
-							<input type="radio" name="an2">
+							<input type="radio" value="ARPANET" name="an9">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">SUPERNET
-							<input type="radio" name="an2">
+							<input type="radio" value="SUPERNET" name="an9">
 							<span class="checkmark"></span>
 						</label>
 
@@ -592,19 +764,19 @@ button:hover {
 				<h3 > 10. 1 Mega bits = _____ Kilo bytes ?</h3>
 
 				<label class="container">1024 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an10">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">1000 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an10">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">125 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an10">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">135 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an10">
 					<span class="checkmark"></span>
 				</label>
 
@@ -612,19 +784,19 @@ button:hover {
 			<div class="tab">
 				<h3 > 11. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
 						<label class="container">java script
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an11">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">JQuery
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an11">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">node js
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an11">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Ajax
-							<input type="radio" name="an1">
+							<input type="radio" value="ZYGONET" name="an11">
 							<span class="checkmark"></span>
 						</label>
    			<br>
@@ -633,19 +805,19 @@ button:hover {
 			<div class="tab">
 				<h3 > 12. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
 					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Light Amblification by Stimulated Emission of Radiation
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Light Amblitude by System Emulssion of Range
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Lence Amblification by State Emission of Rase
-						<input type="radio" name="an2">
+						<input type="radio" value="ZYGONET" name="an12">
 						<span class="checkmark"></span>
 					</label>
 			<br>
@@ -654,19 +826,19 @@ button:hover {
 		<div class="tab">
 			<h3 > 13. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</h3>
 	   				<label class="container">Windows
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Microsoft
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Infosys
-						<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Wipro
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an13">
 							<span class="checkmark"></span>
 						</label>
 				</div>
@@ -675,19 +847,19 @@ button:hover {
 					<h3 > 14. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
 
 							<label class="container">X1
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">N73
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Lumia 540
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Nokia 101
-								<input type="radio" name="an2">
+								<input type="radio" value="ZYGONET" name="an14">
 								<span class="checkmark"></span>
 							</label>
 
@@ -697,19 +869,19 @@ button:hover {
 				<h3 > 15. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
 
 				<label class="container">Hard disc
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Pen drive
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">C drive
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Main memmory
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an15">
 					<span class="checkmark"></span>
 				</label>
 
@@ -720,19 +892,19 @@ button:hover {
 				<h3 > 16. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
 
 				<label class="container">Mr Dagan nor
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Herman Hollerith
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Mr Alan Thomas
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Dr Aboorna Jodrimayi
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an16">
 					<span class="checkmark"></span>
 				</label>
 
@@ -743,19 +915,19 @@ button:hover {
 				<h3 > 17. OCR ൻ്റെ പൂർണരൂപം ?</h3>
 
 				<label class="container">Opening Chapter Reading
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an17">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Charecter Renaming
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an17">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Chapter Reader
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an17">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Object Charecter Reader
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an17">
 					<span class="checkmark"></span>
 				</label>
 					</div>
@@ -765,19 +937,19 @@ button:hover {
 						<h3 > 18. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
 
 						<label class="container">Commannd Class
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an18">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Command Case
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an18">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Carbon Copy
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an18">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Carbon Case
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an18">
 							<span class="checkmark"></span>
 						</label>
 
@@ -787,19 +959,19 @@ button:hover {
 						<h3 > 19. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
 
 						<label class="container">ZYGONET
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an19">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">CORPANET
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an19">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">ARPANET
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an19">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">SUPERNET
-							<input type="radio" name="an2">
+							<input type="radio" value="ZYGONET" name="an19">
 							<span class="checkmark"></span>
 						</label>
 
@@ -810,19 +982,19 @@ button:hover {
 				<h3 > 20. 1 Mega bits = _____ Kilo bytes ?</h3>
 
 				<label class="container">1024 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">1000 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">125 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">135 Kilo bytes
-					<input type="radio" name="an2">
+					<input type="radio" value="ZYGONET" name="an20">
 					<span class="checkmark"></span>
 				</label>
 
@@ -833,7 +1005,7 @@ button:hover {
 					<button type="button" name="btn-submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
 				</div>
 			</div>
-			
+
 <div style="text-align:center;margin-top:40px;">
 	<span class="step"></span>
 	<span class="step"></span>
