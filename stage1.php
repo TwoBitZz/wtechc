@@ -255,7 +255,7 @@
 		{
 				$an13 = $_POST['an13'];
 
-				 if ($an13 == "Microsoft")
+				 if ($an13 == "Nedungadi Bank")
 				 {
 					 $an13 = "1";
 				 }
@@ -275,7 +275,7 @@
 		{
 				$an14 = $_POST['an14'];
 
-				 if ($an14 == "X1")
+				 if ($an14 == "Data Diddling")
 				 {
 					 $an14 = "1";
 				 }
@@ -295,7 +295,7 @@
 		{
 				$an15 = $_POST['an15'];
 
-				 if ($an15 == "Main memmory")
+				 if ($an15 == "Cyber Squatting")
 				 {
 					 $an15 = "1";
 				 }
@@ -315,7 +315,7 @@
 		{
 				$an16 = $_POST['an16'];
 
-				 if ($an16 == "Herman Hollerith")
+				 if ($an16 == "1.3 Seconds")
 				 {
 					 $an16 = "1";
 				 }
@@ -490,8 +490,6 @@
 
     <link rel="icon" href="images/favicon.png">
 
-</head>
-<body >
 <style>
 * {
 	box-sizing: border-box;
@@ -621,7 +619,8 @@ button:hover {
 	background: white;
 }
 </style>
-
+</head>
+<body >
  		<form id="regForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="on">
 			<h1>Stage 1</h1>
 			<div class="tab">
@@ -894,7 +893,7 @@ button:hover {
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Nedungadi Bank<!--W-->
+						<label class="container">Nedungadi Bank
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
@@ -919,7 +918,7 @@ button:hover {
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
-							<label class="container">Data Diddling<!--W-->
+							<label class="container">Data Diddling
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
@@ -929,7 +928,7 @@ button:hover {
 			<div class="tab">
 				<h3 > 15. ഒരു Domain name രണ്ട് പേർ അവകാശപ്പെടുന്നതിന്ന് പറയുന്ന പേര് ?</h3>
 
-				<label class="container">Cyber Squatting <!--W-->
+				<label class="container">Cyber Squatting
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
@@ -960,7 +959,7 @@ button:hover {
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">1.3 Seconds <!--W-->
+				<label class="container">1.3 Seconds
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
