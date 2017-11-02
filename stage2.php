@@ -1,3 +1,98 @@
+<?php
+ 	ob_start();
+ 	session_start();
+ 	require_once 'dbconnect.php';
+
+ 	$error = false;
+ 	$res=mysql_query("SELECT * FROM users WHERE userid=".$_SESSION['user']);
+ 	$userRow=mysql_fetch_array($res);
+ 	$nam=$userRow['username'];
+
+ 	if ( isset($_POST['btn-submit']) )
+ 	{
+
+ 		// clean user inputs to prevent sql injections
+ 		$an1 = trim($_POST['an1']);
+ 		$an1 = strip_tags($an1);
+ 		$an1 = htmlspecialchars($an1);
+
+ 		$an2 = trim($_POST['an2']);
+ 		$an2 = strip_tags($an2);
+ 		$an2 = htmlspecialchars($an2);
+
+ 		$an3 = trim($_POST['an3']);
+ 		$an3 = strip_tags($an3);
+ 		$an3 = htmlspecialchars($an3);
+
+ 		$an4 = trim($_POST['an4']);
+ 		$an4 = strip_tags($an4);
+ 		$an4 = htmlspecialchars($an4);
+
+ 		$an5 = trim($_POST['an5']);
+ 		$an5 = strip_tags($an5);
+ 		$an5 = htmlspecialchars($an5);
+
+ 		$an6 = trim($_POST['an6']);
+ 		$an6 = strip_tags($an6);
+ 		$an6 = htmlspecialchars($an6);
+
+ 		$an7 = trim($_POST['an7']);
+ 	  $an7 = strip_tags($an7);
+ 		$an7 = htmlspecialchars($an7);
+
+ 		$an8 = trim($_POST['an8']);
+ 		$an8 = strip_tags($an8);
+ 		$an8 = htmlspecialchars($an8);
+
+ 		$an9 = trim($_POST['an9']);
+ 		$an9 = strip_tags($an9);
+ 		$an9 = htmlspecialchars($an9);
+
+ 		$an10 = trim($_POST['an10']);
+ 		$an10 = strip_tags($an10);
+ 		$an10 = htmlspecialchars($an10);
+ /* --------------------------------------------------------------*/
+
+ 		 if(!empty($nam))
+ 		 	{
+ 			// check data exist or not
+ 				$query = "SELECT first FROM stg1 WHERE username='$nam'";
+ 				$result = mysql_query($query);
+ 				$count = mysql_num_rows($result);
+
+ 			  	if($count!=0)
+ 			  	{
+ 					$error1 = true;
+ 					$stg1Error = "Answer is already exist";
+ 				}
+
+ 			}
+ 		 // if there's no error, continue to data entry
+ 		 if( !$error1  )
+ 		 {
+ 			 //$ans=1;
+ 			$query = "INSERT INTO stg1(username,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10')";
+ 			$res = mysql_query($query);
+
+ 			if ($conn->$res===true) {
+ 				$errTyp = "success";
+ 				$errMSG = "Successfully entered datas";
+ 				//unset($an1);
+
+ 			}
+ 			 else
+ 			 {
+ 				$errTyp = "danger";
+ 				$errMSG = "Network problem , try again later...";
+ 			 }
+
+ 	 }
+
+
+ 	}
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +172,7 @@ button:hover {
   <!-- One "tab" for each step in the form: -->
 
   <div class="tab">
-    <h3 > 1. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 1. What is 50% of 40% of 3450 ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -87,17 +182,20 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 2. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 2. Find missing numbers <br> C 81 , E 64 , ... 49 , I ... ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an2" >
   						<br>
 
   	</div>
     <br>
+
+        <img src="images/sabeel.JPG" id="nextBtn" onclick="nextPrev(1)">
+
   </div>
 
   <div class="tab">
-    <h3 > 3. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 3.  ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -176,12 +274,13 @@ button:hover {
     <br>
   </div>
 
-
+<div class="tab">
   <div style="overflow:auto;">
     <div style="float:right;">
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
+</div>
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
     <span class="step"></span>
@@ -274,3 +373,4 @@ function fixStepIndicator(n) {
 
 </body>
 </html>
+<?php ob_end_flush(); ?>

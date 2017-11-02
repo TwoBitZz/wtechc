@@ -82,25 +82,26 @@
 			   <h1>Stage 3</h1>
 
 				   	<div class="tab" >
-						 	<h3>1. ഈ ചിത്രത്തിലെ Grey കളറിൻ്റെ Pixel എത്ര ? </h3>
+								<div align="center">
+						 			<h3>1. ഈ ചിത്രത്തിലെ Grey കളറിൻ്റെ Pixel എത്ര ? </h3>
 							  	<br>
-							  	<div align="center">
 										<img src="images/pixel.jpg" height="450" width="550">
-							  	</div>
+							  </div>
 						</div>
 
 						<div class="tab" >
-		   					<h3>2. ഈ ചിത്രത്തെ കുറിച്ച് നിങ്ങൾക്കു അറിയാവുന്നത് വിവരിക്കുക  ?</h3>
-								<br>
-							  	<div align="center">
+								<div align="center">
+		   						<h3>2. ഈ ചിത്രത്തെ കുറിച്ച് നിങ്ങൾക്കു അറിയാവുന്നത് വിവരിക്കുക  ?</h3>
+									<br>
 							   		<img src="" height="450" width="550">
-									</div>
+								</div>
 					  </div>
 
 						 <div class="tab" >
-		   					<h3>3. താഴെ ഉള്ള file ൻ്റെ correct extention പറയുക </h3>
+							 <div align="center">
+		   						<h3>3. താഴെ ഉള്ള file ൻ്റെ correct extention പറയുക </h3>
 					   		  <br>
-
+								</div>
 					   		<center>
 									<a href= download>
 										 <div class="content">
@@ -117,9 +118,10 @@
 						</div>
 
 							<div class="tab" >
-
-		   					<h3>4. QR code Read ചെയ്യുക  ?</h3>
-								<br>
+								<div align="center">
+		   						<h3>4. QR code Read ചെയ്യുക  ?</h3>
+									<br>
+								</div>
 					   		<center>
 					   			<img src="images/qrcode.png">
 								</center>
