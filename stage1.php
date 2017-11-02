@@ -646,7 +646,7 @@ button:hover {
 			</div>
 
 			<div class="tab">
-				<h3 > 2. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
+				<h3 > 2. LASER - ന്റെ പൂർണ  രൂപം എന്താണ് ?</h3>
 					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
 						<input type="radio" value="Lence Amblitude by Stimulated Emulssion of Radiation" id="nextBtn" onclick="nextPrev(1)" name="an2">
 						<span class="checkmark"></span>
@@ -709,7 +709,7 @@ button:hover {
 			</div>
 
 			<div class="tab">
-				<h3 > 5. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
+				<h3 > 5. primary Memory യുടെ മറ്റൊരു നാമം ?</h3>
 
 				<label class="container">Hard disc
 					<input type="radio" value="Hard disc"id="nextBtn" onclick="nextPrev(1)" name="an5">
@@ -732,7 +732,7 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 6. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
+				<h3 > 6. Punch Card കണ്ടുപിടിച്ചതാര് ? </h3>
 
 				<label class="container">Mr Dagan nor
 					<input type="radio" value="Mr Dagan nor" id="nextBtn" onclick="nextPrev(1)" name="an6">
@@ -799,7 +799,7 @@ button:hover {
 					</div>
 
 					<div class="tab">
-						<h3 > 9. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
+						<h3 > 9. ആദ്യത്തെ Computer Network ന്റെ നാമം എന്തായിരുന്നു ?</h3>
 
 						<label class="container">ZYGONET
 							<input type="radio"value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an9">
@@ -973,21 +973,21 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 17. ആദ്യത്തെ ransomware പേര് എന്താണ് ?</h3>
+				<h3 > 17. ലോകത്തിലെ ഏറ്റവും സുരക്ഷിത നഗരമായി തെരഞ്ഞെടുക്കപ്പെട്ട രാജ്യം ?</h3>
 
-				<label class="container">
+				<label class="container">Singapore
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Object Charecter Renaming
+				<label class="container">London
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Object Chapter Reader
+				<label class="container">Tokyo<!--W-->
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Object Charecter Reader
+				<label class="container">Delhi
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
@@ -995,21 +995,21 @@ button:hover {
 
 
 					<div class="tab">
-						<h3 > 18. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
+						<h3 > 18. EXIF ന്റെ പൂർണ്ണരൂപം ?</h3>
 
-						<label class="container">Commannd Class
+						<label class="container">Executable Image File Finish
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Command Case
+						<label class="container">Executable Image File Format
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Carbon Copy
+						<label class="container">Exchangeable Image File Format<!--W-->
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Carbon Case
+						<label class="container">Exchangeable Image Fine Finish
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
@@ -1017,21 +1017,21 @@ button:hover {
 					</div>
 
 					<div class="tab">
-						<h3 > 19. ആദ്യത്തെ Computer Network ൻ്റെ നാമം എന്തായിരുന്നു ?</h3>
+						<h3 > 19. what is the size of int datatype for 32 bit system ?</h3>
 
-						<label class="container">ZYGONET
+						<label class="container">1 Byte
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">CORPANET
+						<label class="container">2 Bytes
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">ARPANET
+						<label class="container">4 Bytes<!--w-->
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">SUPERNET
+						<label class="container">8 Bytes
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
@@ -1040,21 +1040,21 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 20. 1 Mega bits = _____ Kilo bytes ?</h3>
+				<h3 > 20. Red Fort നിർമ്മിച്ച വ്യക്തി ?</h3>
 
-				<label class="container">1024 Kilo bytes
+				<label class="container">Shajahan<!--w-->
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">1000 Kilo bytes
+				<label class="container">Akbar
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">125 Kilo bytes
+				<label class="container">Jahangir
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">135 Kilo bytes
+				<label class="container">Sher Shah
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
