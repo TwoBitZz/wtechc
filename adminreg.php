@@ -7,7 +7,7 @@
 	include_once 'dbconnect.php';
 
 	$error = false;
-
+z
 	if ( isset($_POST['btn-signup']) ) {
 
 		// clean user inputs to prevent sql injections
