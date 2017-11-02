@@ -335,7 +335,7 @@
 		{
 				$an17 = $_POST['an17'];
 
-				 if ($an17 == "Object Charecter Reader")
+				 if ($an17 == "Tokyo")
 				 {
 					 $an17 = "1";
 				 }
@@ -355,7 +355,7 @@
 		{
 				$an18 = $_POST['an18'];
 
-				 if ($an18 == "Carbon Copy")
+				 if ($an18 == "Exchangeable Image File Format")
 				 {
 					 $an18 = "1";
 				 }
@@ -375,7 +375,7 @@
 		{
 				$an19 = $_POST['an19'];
 
-				 if ($an19 == "ARPANET")
+				 if ($an19 == "4 Bytes")
 				 {
 					 $an19 = "1";
 				 }
@@ -395,7 +395,7 @@
 		{
 				$an20 = $_POST['an20'];
 
-				 if ($an20 == "125 Kilo bytes")
+				 if ($an20 == "Shajahan")
 				 {
 					 $an20 = "1";
 				 }
@@ -865,19 +865,19 @@ button:hover {
 			<div class="tab">
 				<h3 > 12. ആദ്യത്തെ കമ്പ്യൂട്ടർ വൈറസിന്റെ പേര്  ?</h3>
 					<label class="container">Trojan
-						<input type="radio" value="Trojan"id="nextBtn" onclick="nextPrev(1)" name="an12">
+						<input type="radio" value="Trojan" id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Apple
-						<input type="radio" value="Apple"id="nextBtn" onclick="nextPrev(1)" name="an12">
+						<input type="radio" value="Apple" id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">Malware
-						<input type="radio" value="Malware"id="nextBtn" onclick="nextPrev(1)" name="an12">
+						<input type="radio" value="Malware" id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
 					<label class="container">BluBerry
-						<input type="radio" value="BluBerry"id="nextBtn" onclick="nextPrev(1)" name="an12">
+						<input type="radio" value="BluBerry" id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
 			<br>
@@ -886,19 +886,19 @@ button:hover {
 		<div class="tab">
 			<h3 > 13.  കേരളത്തിലെ ആദ്യ ബാങ്ക് ഏതാണ് ?</h3>
 	   				<label class="container">Malabar Bank
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
+							<input type="radio" value="Malabar Bank" id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">SBI
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
+							<input type="radio" value="SBI" id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Nedungadi Bank
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
+							<input type="radio" value="Nedungadi Bank" id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Kerala Karshika Bank
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
+							<input type="radio" value="Kerala Karshika Bank" id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
 				</div>
@@ -907,19 +907,19 @@ button:hover {
 					<h3 > 14. കംപ്യൂട്ടർ പ്രൊസസിങ് നടക്കുന്നതിന് മുൻപ് Input Dataയിൽ മാറ്റം വരുത്തുന്നതിന് പറയുന്ന പേര് ?</p>
 
 							<label class="container">Key Wrapping
-								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
+								<input type="radio" value="Key Wrapping" id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Input stealing
-								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
+								<input type="radio" value="Input stealing" id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Data Hacking
-								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
+								<input type="radio" value="Data Hacking" id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
 							<label class="container">Data Diddling
-								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
+								<input type="radio" value="Data Diddling" id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
 
@@ -929,19 +929,19 @@ button:hover {
 				<h3 > 15. ഒരു Domain name രണ്ട് പേർ അവകാശപ്പെടുന്നതിന്ന് പറയുന്ന പേര് ?</h3>
 
 				<label class="container">Cyber Squatting
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
+					<input type="radio" value="Cyber Squatting" id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Cyber Vandalism
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
+					<input type="radio" value="Cyber Vandalism" id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Data Diddling
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
+					<input type="radio" value="Data Diddling" id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Domain Conflict
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
+					<input type="radio" value="Domain Conflict" id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
 
@@ -952,19 +952,19 @@ button:hover {
 				<h3 > 16. ചന്ദ്രനിൽ നിന്നുള്ള പ്രകാശം ഭൂമിയിൽ എത്താൻ വേണ്ട സമയം എത്ര? </h3>
 
 				<label class="container">1.111 Seconds
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
+					<input type="radio" value="1.111 Seconds" id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">1.03 Seconds
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
+					<input type="radio" value="1.03 Seconds" id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">1.3 Seconds
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
+					<input type="radio" value="1.3 Seconds" id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">1.2 Seconds
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
+					<input type="radio" value="1.2 Seconds" id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
 
@@ -975,19 +975,19 @@ button:hover {
 				<h3 > 17. ലോകത്തിലെ ഏറ്റവും സുരക്ഷിത നഗരമായി തെരഞ്ഞെടുക്കപ്പെട്ട രാജ്യം ?</h3>
 
 				<label class="container">Singapore
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
+					<input type="radio" value="Singapore"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">London
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
+					<input type="radio" value="London"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Tokyo<!--W-->
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
+				<label class="container">Tokyo
+					<input type="radio" value="Tokyo"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Delhi
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
+					<input type="radio" value="Delhi"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
 					</div>
@@ -997,19 +997,19 @@ button:hover {
 						<h3 > 18. EXIF ന്റെ പൂർണ്ണരൂപം ?</h3>
 
 						<label class="container">Executable Image File Finish
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
+							<input type="radio" value="Executable Image File Finish" id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Executable Image File Format
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
+							<input type="radio" value="Executable Image File Format" id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Exchangeable Image File Format<!--W-->
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
+						<label class="container">Exchangeable Image File Format
+							<input type="radio" value="Exchangeable Image File Format" id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">Exchangeable Image Fine Finish
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an18">
+							<input type="radio" value="Exchangeable Image Fine Finish" id="nextBtn" onclick="nextPrev(1)" name="an18">
 							<span class="checkmark"></span>
 						</label>
 
@@ -1019,19 +1019,19 @@ button:hover {
 						<h3 > 19. what is the size of int datatype for 32 bit system ?</h3>
 
 						<label class="container">1 Byte
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
+							<input type="radio" value="8 Bytes"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">2 Bytes
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
+							<input type="radio" value="8 Bytes"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">4 Bytes<!--w-->
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
+						<label class="container">4 Bytes
+							<input type="radio" value="8 Bytes"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
 						<label class="container">8 Bytes
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an19">
+							<input type="radio" value="8 Bytes"id="nextBtn" onclick="nextPrev(1)" name="an19">
 							<span class="checkmark"></span>
 						</label>
 
@@ -1041,20 +1041,20 @@ button:hover {
 			<div class="tab">
 				<h3 > 20. Red Fort നിർമ്മിച്ച വ്യക്തി ?</h3>
 
-				<label class="container">Shajahan<!--w-->
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
+				<label class="container">Shajahan
+					<input type="radio" value="Shajahan" id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Akbar
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
+					<input type="radio" value="Akbar" id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Jahangir
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
+					<input type="radio" value="Jahangir" id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
 				<label class="container">Sher Shah
-					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an20">
+					<input type="radio" value="Sher Shah" id="nextBtn" onclick="nextPrev(1)" name="an20">
 					<span class="checkmark"></span>
 				</label>
 
@@ -1063,7 +1063,7 @@ button:hover {
 			<div class="tab">
 			<div style="overflow:auto;">
 				<div style="float:right;">
-					<button type="submit" name="btn-submit" >Next</button>
+					<button type="submit" name="btn-submit" >Submit</button>
 				</div>
 			</div>
 		</div>
