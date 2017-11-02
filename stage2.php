@@ -73,33 +73,123 @@ button:hover {
 <body>
 
 <form id="regForm" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
-  <h1>Register:</h1>
+  <h1>Stage 2</h1>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Name:
-    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+
+  <div class="tab">
+    <h3 > 1. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
   </div>
-  <div class="tab">Contact Info:
-    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+
+  <div class="tab">
+    <h3 > 2. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
   </div>
-  <div class="tab">Birthday:
-    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+
+  <div class="tab">
+    <h3 > 3. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
   </div>
-  <div class="tab">Login Info:
-    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+
+  <div class="tab">
+    <h3 > 4. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
   </div>
+
+  <div class="tab">
+    <h3 > 5. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+  <div class="tab">
+    <h3 > 6. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+  <div class="tab">
+    <h3 > 7. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+  <div class="tab">
+    <h3 > 8. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+  <div class="tab">
+    <h3 > 9. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+  <div class="tab">
+    <h3 > 10. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <div align="center">
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<br>
+
+  	</div>
+    <br>
+  </div>
+
+
   <div style="overflow:auto;">
     <div style="float:right;">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
