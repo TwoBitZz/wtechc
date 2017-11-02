@@ -83,7 +83,7 @@
 
 				   	<div class="tab" >
 								<div align="center">
-						 			<h3>1. ഈ ചിത്രത്തിലെ Grey കളറിൻ്റെ Pixel എത്ര ? </h3>
+						 			<h3>1. ഈ ചിത്രത്തിലെ Grey കളറിന്റെെ Pixel എത്ര ? </h3>
 							  	<br>
 										<img src="images/pixel.jpg" height="450" width="550">
 							  </div>
@@ -99,7 +99,7 @@
 
 						 <div class="tab" >
 							 <div align="center">
-		   						<h3>3. താഴെ ഉള്ള file ൻ്റെ correct extention പറയുക </h3>
+		   						<h3>3. താഴെ ഉള്ള file ന്റെ correct extention പറയുക </h3>
 					   		  <br>
 								</div>
 					   		<center>

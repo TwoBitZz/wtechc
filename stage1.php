@@ -776,7 +776,7 @@ button:hover {
 
 
 					<div class="tab">
-						<h3 > 8. ഈമെയിലിൽ ഉള്ള CC എന്നതിൻ്റെ  പൂർണരൂപം ?</h3>
+						<h3 > 8. ഈമെയിലിൽ ഉള്ള CC എന്നതിന്റെ  പൂർണരൂപം ?</h3>
 
 						<label class="container">Commannd Class
 							<input type="radio" value="Commannd Class" id="nextBtn" onclick="nextPrev(1)" name="an8">
