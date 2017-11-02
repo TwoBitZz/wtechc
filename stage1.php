@@ -973,9 +973,9 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 17. ആരാണ് വന്ദേമാതരം എഴുതിയത് ?</h3>
+				<h3 > 17. ആദ്യത്തെ ransomware പേര് എന്താണ് ?</h3>
 
-				<label class="container">Rabindranath Tagore
+				<label class="container">
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
