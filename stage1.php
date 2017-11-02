@@ -755,7 +755,7 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 7. OCR ൻ്റെ പൂർണരൂപം ?</h3>
+				<h3 > 7. OCR ന്റെ പൂർണരൂപം ?</h3>
 
 				<label class="container">Opening Chapter Reading
 					<input type="radio" value="Opening Chapter Reading" id="nextBtn" onclick="nextPrev(1)" name="an7">
@@ -886,40 +886,40 @@ button:hover {
 
 		<div class="tab">
 			<h3 > 13.  കേരളത്തിലെ ആദ്യ ബാങ്ക് ഏതാണ് ?</h3>
-	   				<label class="container">Windows
+	   				<label class="container">Malabar Bank
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Microsoft
+						<label class="container">SBI
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">nedungadi bank
+						<label class="container">Nedungadi Bank<!--W-->
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Wipro
+						<label class="container">Kerala Karshika Bank
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
 				</div>
 
 				<div class="tab">
-					<h3 > 14. ആൻഡ്രോയിഡ്  വിന്ഡോസ് അപ്പ്ലിക്കേഷൻസ് ഒരേ സമയം സ്‌പോർട്ട്  ചെയ്യുന്ന രീതിയിൽ Nokia  ആദ്യമായി  നിർമിച്ച  മോഡൽ  ഏത്  ?</p>
+					<h3 > 14. കംപ്യൂട്ടർ പ്രൊസസിങ് നടക്കുന്നതിന് മുൻപ് Input Dataയിൽ മാറ്റം വരുത്തുന്നതിന് പറയുന്ന പേര് ?</p>
 
-							<label class="container">X1
+							<label class="container">Key Wrapping
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
-							<label class="container">N73
+							<label class="container">Input stealing
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
-							<label class="container">Lumia 540
+							<label class="container">Data Hacking
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
-							<label class="container">Nokia 101
+							<label class="container">Data Diddling<!--W-->
 								<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an14">
 								<span class="checkmark"></span>
 							</label>
@@ -927,21 +927,21 @@ button:hover {
 			</div>
 
 			<div class="tab">
-				<h3 > 15. primary Memmory യുടെ മറ്റൊരു നാമം ?</h3>
+				<h3 > 15. ഒരു Domain name രണ്ട് പേർ അവകാശപ്പെടുന്നതിന്ന് പറയുന്ന പേര് ?</h3>
 
-				<label class="container">Hard disc
+				<label class="container">Cyber Squatting <!--W-->
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Pen drive
+				<label class="container">Cyber Vandalism
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">C drive
+				<label class="container">Data Diddling
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Main memmory
+				<label class="container">Domain Conflict
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an15">
 					<span class="checkmark"></span>
 				</label>
@@ -950,21 +950,21 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 16. Punch Card എന്ന ഉപകരണത്തിൻ്റെ കണ്ടുപിടിത്തക്കാരന് ആരാണ് ? </h3>
+				<h3 > 16. ചന്ദ്രനിൽ നിന്നുള്ള പ്രകാശം ഭൂമിയിൽ എത്താൻ വേണ്ട സമയം എത്ര? </h3>
 
-				<label class="container">Mr Dagan nor
+				<label class="container">1.111 Seconds
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Herman Hollerith
+				<label class="container">1.03 Seconds
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Mr Alan Thomas
+				<label class="container">1.3 Seconds <!--W-->
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
-				<label class="container">Dr Aboorna Jodrimayi
+				<label class="container">1.2 Seconds
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an16">
 					<span class="checkmark"></span>
 				</label>
@@ -973,9 +973,9 @@ button:hover {
 
 
 			<div class="tab">
-				<h3 > 17. OCR ൻ്റെ പൂർണരൂപം ?</h3>
+				<h3 > 17. ആരാണ് വന്ദേമാതരം എഴുതിയത് ?</h3>
 
-				<label class="container">Opening Chapter Reading
+				<label class="container">Rabindranath Tagore
 					<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an17">
 					<span class="checkmark"></span>
 				</label>
