@@ -211,176 +211,207 @@
 
 		}
 
+		if(isset($_POST['an11']))
+		{
+				$an11 = $_POST['an11'];
 
-		/*$an11 = trim($_POST['an11']);
-		$an11 = strip_tags($an11);
-		$an11 = htmlspecialchars($an11);
-		if($an11=="node js")
-		{
-			$an11 ="1";
-		}
-		else if (empty($an11))
-		 {
-			$error = true;
-			$an11 ="0";
-		 }
-		else
-		{
-			$an11 ="0";
-		}
+				 if ($an11 == "John Napier")
+				 {
+					 $an11 = "1";
+				 }
+				 else if (empty($an11))
+		 		 {
+		 			$error = true;
+		 			$an11 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an11 ="0";
+		 			}
 
-		$an12 = trim($_POST['an12']);
-		$an12 = strip_tags($an12);
-		$an12 = htmlspecialchars($an12);
-		if($an12=="Light Amblification by Stimulated Emission of Radiation")
-		{
-			$an12 ="1";
-		}
-		else if (empty($an12))
-		 {
-			$error = true;
-			$an12 ="0";
-		 }
-		else
-		{
-			$an12 ="0";
 		}
 
-		$an13 = trim($_POST['an13']);
-		$an13 = strip_tags($an13);
-		$an13 = htmlspecialchars($an13);
-		if($an13=="Microsoft")
+		if(isset($_POST['an12']))
 		{
-			$an13 ="1";
-		}
-		else if (empty($an13))
-		 {
-			$error = true;
-			$an13 ="0";
-		 }
-		else
-		{
-			$an13 ="0";
+				$an12 = $_POST['an12'];
+
+				 if ($an12 == "Apple")
+				 {
+					 $an12 = "1";
+				 }
+				 else if (empty($an12))
+		 		 {
+		 			$error = true;
+		 			$an12 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an12 ="0";
+		 			}
+
 		}
 
-		$an14 = trim($_POST['an14']);
-		$an14 = strip_tags($an14);
-		$an14 = htmlspecialchars($an14);
-		if($an14=="X1")
+		if(isset($_POST['an13']))
 		{
-			$an14 ="1";
-		}
-		else if (empty($an14))
-		 {
-			$error = true;
-			$an14 ="0";
-		 }
-		else
-		{
-			$an14 ="0";
+				$an13 = $_POST['an13'];
+
+				 if ($an13 == "Microsoft")
+				 {
+					 $an13 = "1";
+				 }
+				 else if (empty($an13))
+		 		 {
+		 			$error = true;
+		 			$an13 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an13 ="0";
+		 			}
+
 		}
 
-		$an15 = trim($_POST['an15']);
-		$an15 = strip_tags($an15);
-		$an15 = htmlspecialchars($an15);
-		if($an15=="Main memmory")
+		if(isset($_POST['an14']))
 		{
-			$an15 ="1";
-		}
-		else if (empty($an15))
-		 {
-			$error = true;
-			$an15 ="0";
-		 }
-		else
-		{
-			$an15 ="0";
+				$an14 = $_POST['an14'];
+
+				 if ($an14 == "X1")
+				 {
+					 $an14 = "1";
+				 }
+				 else if (empty($an14))
+		 		 {
+		 			$error = true;
+		 			$an14 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an14 ="0";
+		 			}
+
 		}
 
-		$an16 = trim($_POST['an16']);
-		$an16 = strip_tags($an16);
-		$an16 = htmlspecialchars($an16);
-		if($an16=="Herman Hollerith")
+		if(isset($_POST['an15']))
 		{
-			$an16 ="1";
-		}
-		else if (empty($an16))
-		 {
-			$error = true;
-			$an16 ="0";
-		 }
-		else
-		{
-			$an16 ="0";
+				$an15 = $_POST['an15'];
+
+				 if ($an15 == "Main memmory")
+				 {
+					 $an15 = "1";
+				 }
+				 else if (empty($an15))
+		 		 {
+		 			$error = true;
+		 			$an15 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an15 ="0";
+		 			}
+
 		}
 
-		$an17 = trim($_POST['an17']);
-		$an17 = strip_tags($an17);
-		$an17 = htmlspecialchars($an17);
-		if($an17=="Object Charecter Reader")
+		if(isset($_POST['an16']))
 		{
-			$an17 ="1";
-		}
-		else if (empty($an17))
-		 {button
-			$error = true;
-			$an17 ="0";
-		 }
-		else
-		{
-			$an17 ="0";
+				$an16 = $_POST['an16'];
+
+				 if ($an16 == "Herman Hollerith")
+				 {
+					 $an16 = "1";
+				 }
+				 else if (empty($an16))
+		 		 {
+		 			$error = true;
+		 			$an16 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an16 ="0";
+		 			}
+
 		}
 
-		$an18 = trim($_POST['an18']);
-		$an18 = strip_tags($an18);
-		$an18 = htmlspecialchars($an18);
-		if($an18=="Carbon Copy")
+		if(isset($_POST['an17']))
 		{
-			$an18 ="1";
-		}
-		else if (empty($an18))
-		 {
-			$error = true;
-			$an18 ="0";
-		 }
-		else
-		{
-			$an18 ="0";
+				$an17 = $_POST['an17'];
+
+				 if ($an17 == "Object Charecter Reader")
+				 {
+					 $an17 = "1";
+				 }
+				 else if (empty($an17))
+		 		 {
+		 			$error = true;
+		 			$an17 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an17 ="0";
+		 			}
+
 		}
 
-		$an19 = trim($_POST['an19']);
-		$an19 = strip_tags($an19);
-		$an19 = htmlspecialchars($an19);
-		if($an19=="ARPANET")
+		if(isset($_POST['an18']))
 		{
-			$an19 ="1";
-		}
-		else if (empty($an19))
-		 {
-			$error = true;
-			$an19 ="0";
-		 }
-		else
-		{
-			$an19 ="0";
+				$an18 = $_POST['an18'];
+
+				 if ($an18 == "Carbon Copy")
+				 {
+					 $an18 = "1";
+				 }
+				 else if (empty($an18))
+		 		 {
+		 			$error = true;
+		 			$an18 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an18 ="0";
+		 			}
+
 		}
 
-		$an20 = trim($_POST['an20']);
-		$an20 = strip_tags($an20);
-		$an20 = htmlspecialchars($an20);
-		if($an20=="125 Kilo bytes")
+		if(isset($_POST['an19']))
 		{
-			$an20 ="1";
+				$an19 = $_POST['an19'];
+
+				 if ($an19 == "ARPANET")
+				 {
+					 $an19 = "1";
+				 }
+				 else if (empty($an9))
+		 		 {
+		 			$error = true;
+		 			$an19 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an19 ="0";
+		 			}
+
 		}
-		else if (empty($an10))
-		 {
-			$error = true;
-			$an20 ="0";
-		 }
-		else
+
+		if(isset($_POST['an20']))
 		{
-			$an20 ="0";
-		}*/
+				$an20 = $_POST['an20'];
+
+				 if ($an20 == "125 Kilo bytes")
+				 {
+					 $an20 = "1";
+				 }
+				 else if (empty($an20))
+		 		 {
+		 			$error = true;
+		 			$an20 ="0";
+		 		 }
+		 			else
+		 			{
+		 				$an20 ="0";
+		 			}
+
+		}
+
+
 /* --------------------------------------------------------------*/
 
 		 if(!empty($nam))
@@ -812,49 +843,49 @@ button:hover {
 
 			</div>
 			<div class="tab">
-				<h3 > 11. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
-						<label class="container">java script
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an11">
+				<h3 > 11. ലോഗരിതം കണ്ടുപിടിച്ചതാര് ?</h3>
+						<label class="container">John Napier
+							<input type="radio" value="John Napier" id="nextBtn" onclick="nextPrev(1)" name="an11">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">JQuery
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an11">
+						<label class="container">Sabeer Battiya
+							<input type="radio" value="Sabeer Battiya" id="nextBtn" onclick="nextPrev(1)" name="an11">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">node js
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an11">
+						<label class="container">C V Raman
+							<input type="radio" value="C V Raman" id="nextBtn" onclick="nextPrev(1)" name="an11">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Ajax
-							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an11">
+						<label class="container">karthaus
+							<input type="radio" value="karthaus" id="nextBtn" onclick="nextPrev(1)" name="an11">
 							<span class="checkmark"></span>
 						</label>
    			<br>
 			</div>
 
 			<div class="tab">
-				<h3 > 12. LASER - ൻ്റെ  പൂർണ  രൂപം എന്താണ് ?</h3>
-					<label class="container">Lence Amblitude by Stimulated Emulssion of Radiation
-						<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an12">
+				<h3 > 12. ആദ്യത്തെ കമ്പ്യൂട്ടർ വൈറസിന്റെ പേര്  ?</h3>
+					<label class="container">Trojan
+						<input type="radio" value="Trojan"id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
-					<label class="container">Light Amblification by Stimulated Emission of Radiation
-						<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an12">
+					<label class="container">Apple
+						<input type="radio" value="Apple"id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
-					<label class="container">Light Amblitude by System Emulssion of Range
-						<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an12">
+					<label class="container">Malware
+						<input type="radio" value="Malware"id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
-					<label class="container">Lence Amblification by State Emission of Rase
-						<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an12">
+					<label class="container">BluBerry
+						<input type="radio" value="BluBerry"id="nextBtn" onclick="nextPrev(1)" name="an12">
 						<span class="checkmark"></span>
 					</label>
 			<br>
 		</div>
 
 		<div class="tab">
-			<h3 > 13. ഏതു കമ്പനി ആണ് വിൻഡോസ്‌ നിർമ്മിച്ചത് ?</h3>
+			<h3 > 13.  കേരളത്തിലെ ആദ്യ ബാങ്ക് ഏതാണ് ?</h3>
 	   				<label class="container">Windows
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
@@ -863,7 +894,7 @@ button:hover {
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
-						<label class="container">Infosys
+						<label class="container">nedungadi bank
 							<input type="radio" value="ZYGONET"id="nextBtn" onclick="nextPrev(1)" name="an13">
 							<span class="checkmark"></span>
 						</label>
@@ -1037,7 +1068,7 @@ button:hover {
 				</div>
 			</div>
 		</div>
-		
+
 <div style="text-align:center;margin-top:40px;">
 	<span class="step"></span>
 	<span class="step"></span>
