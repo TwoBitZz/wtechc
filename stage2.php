@@ -56,7 +56,7 @@
  		 if(!empty($nam))
  		 	{
  			// check data exist or not
- 				$query = "SELECT first FROM stg2 WHERE username='$nam'";
+ 				$query = "SELECT m1 FROM stg2 WHERE username='$nam'";
  				$result = mysql_query($query);
  				$count = mysql_num_rows($result);
 
@@ -195,7 +195,7 @@ button:hover {
   <div class="tab">
     <h3 > 3. If 30% of number is 12.6 find the number ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an3" >
   						<br>
 
   	</div>
@@ -205,7 +205,7 @@ button:hover {
   <div class="tab">
     <h3 > 4. What number must be added to 6 , 16 , 8 ,... to get an average of 32 ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an4" >
   						<br>
 
   	</div>
@@ -215,7 +215,7 @@ button:hover {
   <div class="tab">
     <h3 > 5. A father has 30 years older than his son, He will be three times as old as his son after 5 years, What is the father's age ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an5" >
   						<br>
 
   	</div>
@@ -225,7 +225,7 @@ button:hover {
   <div class="tab">
     <h3 > 6.  ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an6" >
   						<br>
 
   	</div>
@@ -233,9 +233,9 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 7. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 7.  ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an7" >
   						<br>
 
   	</div>
@@ -243,9 +243,9 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 8. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 8.  ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an8" >
   						<br>
 
   	</div>
@@ -253,9 +253,9 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 9. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 9.  ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an9" >
   						<br>
 
   	</div>
@@ -263,9 +263,9 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 10. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 10.  ?</h3>
     <div align="center">
-  						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
+  						<input class="_6v " type="text" placeholder="Your Answer" name="an10" >
   						<br>
 
   	</div>

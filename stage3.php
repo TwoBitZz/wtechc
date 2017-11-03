@@ -93,7 +93,7 @@
 								<div align="center">
 		   						<h3>2. ഈ ചിത്രത്തെ കുറിച്ച് നിങ്ങൾക്കു അറിയാവുന്നത് വിവരിക്കുക  ?</h3>
 									<br>
-							   		<img src="" height="450" width="550">
+							   		<img src="images/photo.jpg" height="450" width="550">
 								</div>
 					  </div>
 
@@ -130,6 +130,7 @@
 
 							<div style="overflow:auto;">
 						    <div style="float:right;">
+									<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
 						      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
 						    </div>
 						  </div>

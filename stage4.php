@@ -4,6 +4,15 @@
   require_once 'dbconnect.php';
 
   // if session is not set this will redirect to login page
+  if( !isset($_SESSION['user']) ) {
+    header("Location: index.php");
+    exit;
+  }
+  // select loggedin users detail
+  $res=mysql_query("SELECT * FROM users WHERE userid=".$_SESSION['user']);
+  $userRow=mysql_fetch_array($res);
+
+  // if session is not set this will redirect to login page
   if( isset($_SESSION['hack'])!="" ) {
     header("Location: stage4main.php");
     exit;
@@ -25,13 +34,13 @@
 	if (!$error)
 		{
 
-		  $res=mysql_query("SELECT h0id, onlypass FROM hak0 WHERE h0id='1'");
+		  $res=mysql_query("SELECT hid, hpass FROM hak WHERE hid='1'");
 		  $row=mysql_fetch_array($res);
 		  $count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
 
-		  if( $count == 1 && $row['onlypass']==$hpass )
+		  if( $count == 1 && $row['hpass']==$hpass )
 		  {
-			  $_SESSION['hack'] = $row['h0id'];
+			  $_SESSION['hack'] = $row['hid'];
 			  //header("Location: stage4check()");
 			  header("Location: stage4main.php");
 		  }
@@ -60,9 +69,9 @@
 
 
 	<h2 style="text-decoration: underline; text-align: center;">ATM PIN</h2>
-	  <p>You must read it. <b>Please <a href="file/read.txt">click here</a></b></p>
+	  <p>You must read it. <b>Please <a href= download> <div class="content"> <a href="file/read.txt" download="read.pdf">click here</a></div></a></b></p>
 	<img src="images/purce.jpg" width="200" height="200">
-	<img class="top" src="images/purce.jpg" width="200" height="200">
+	<img class="top" src="images/atm.png" width="200" height="200">
 <!-- Trigger/Open The Modal -->
 		<br>
   <center>
@@ -80,7 +89,7 @@
 	   <div class="container">
 			<div class="">
 
-				<img src="images/atm.png" width="300" height="300" alt="Avatar" class="avatar">
+				<img src="images/admin.png" width="300" height="300" alt="Avatar" class="avatar">
 			</div >
 
 
@@ -142,10 +151,11 @@ window.onclick = function(event) {
 	<footer>
 			<div align="center">
 				<font color="black">
-					<b> &copy</b> Copyright&nbsp;@&nbsp;&nbsp;<b>W_Tech_C - 2017 ...</b>&nbsp;&nbsp;&nbsp;&nbsp; Developed with ❤ by <b>Two Bitz</b>
+					<b> &copy</b> Copyright&nbsp;@&nbsp;&nbsp;<b>W_Tech_C - 2017 ...</b>&nbsp;&nbsp;&nbsp;&nbsp; Developed with ❤ by <b><a target="_blank" href="http://www.twobits.ml">TwoBitZz</a></b>
 				</font>
 			</div>
 		</footer>
 
 </body>
 </html>
+<?php ob_end_flush(); ?>
