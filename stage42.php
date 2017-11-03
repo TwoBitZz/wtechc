@@ -50,7 +50,7 @@ if ( !isset($_SESSION['hack2']) ) {
         }
 
       }
-    }9
+    }
 
 
 ?>
