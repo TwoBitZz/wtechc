@@ -84,7 +84,7 @@
 
       <span style="color:#eee"><?php// echo $passError; ?></span>
     <br>
-    <button id="myBtn" class="button">Start</button>
+    <button id="myBtn" class="button">Transfer</button>
   </center>
 
 <div id="id01" class="modal">

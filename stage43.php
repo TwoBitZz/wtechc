@@ -143,7 +143,7 @@
                                         <div class="heading-outer top-bottom relative">
                                             <div class="overflow p-t-40 p-l-40 p-r-40 p-b-40">
                                                 <div class="section-heading-outer">
-                                                    <h1 class="heading">We're <span class="color">Completed</span>, In this GAME</h1>
+                                                    <h1 class="heading">You're <span class="color">Completed</span>, In this GAME</h1>
                                                 </div>
                                             </div>
                                         </div>

