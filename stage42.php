@@ -34,7 +34,7 @@ if ( !isset($_SESSION['hack2']) ) {
     if (!$error)
       {
 
-        $res=mysql_query("SELECT hid, hpass FROM hak3 WHERE hid='1'");
+        $res=mysql_query("SELECT hid, hpass FROM 9hak3 WHERE hid='1'");
         $row=mysql_fetch_array($res);
         $count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
 
@@ -50,7 +50,7 @@ if ( !isset($_SESSION['hack2']) ) {
         }
 
       }
-    }
+    }9
 
 
 ?>
