@@ -223,7 +223,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 6.</h3>
+    <h3 > 6. Find the missing element ?</h3>
     <img src="images/mat1.png" height="500" width="500" alt="">
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an6" >
@@ -234,7 +234,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 7.</h3>
+    <h3 > 7. Find the missing element ?</h3>
     <img src="images/mat2.png" height="500" width="500" alt="">
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an7" >
@@ -245,7 +245,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 8.</h3>
+    <h3 > 8. Find the missing element ?</h3>
     <img src="images/mat3.png" height="500" width="500" alt="">
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an8" >
@@ -256,7 +256,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 9.</h3>
+    <h3 > 9. Find the missing element ?</h3>
     <img src="images/mat4.png" height="500" width="500" alt="">
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an9" >
@@ -267,7 +267,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 10.</h3>
+    <h3 > 10. Find the missing element ?</h3>
     <img src="images/mat5.png" height="500" width="500" alt="">
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an10" >
