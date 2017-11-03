@@ -56,7 +56,7 @@
  		 if(!empty($nam))
  		 	{
  			// check data exist or not
- 				$query = "SELECT first FROM stg1 WHERE username='$nam'";
+ 				$query = "SELECT first FROM stg2 WHERE username='$nam'";
  				$result = mysql_query($query);
  				$count = mysql_num_rows($result);
 
@@ -71,7 +71,7 @@
  		 if( !$error1  )
  		 {
  			 //$ans=1;
- 			$query = "INSERT INTO stg1(username,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10')";
+ 			$query = "INSERT INTO stg2(username,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10) VALUES('$nam','$an1','$an2','$an3','$an4','$an5','$an6','$an7','$an8','$an9','$an10')";
  			$res = mysql_query($query);
 
  			if ($conn->$res===true) {
@@ -190,12 +190,10 @@ button:hover {
   	</div>
     <br>
 
-        <img src="images/sabeel.JPG" id="nextBtn" onclick="nextPrev(1)">
-
   </div>
 
   <div class="tab">
-    <h3 > 3.  ?</h3>
+    <h3 > 3. If 30% of number is 12.6 find the number ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -205,7 +203,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 4. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 4. What number must be added to 6 , 16 , 8 ,... to get an average of 32 ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -215,7 +213,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 5. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 5. A father has 30 years older than his son, He will be three times as old as his son after 5 years, What is the father's age ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -225,7 +223,7 @@ button:hover {
   </div>
 
   <div class="tab">
-    <h3 > 6. സെർവർ സൈഡ് Scripting  ഭാഷ ഏതാണ് ?</h3>
+    <h3 > 6.  ?</h3>
     <div align="center">
   						<input class="_6v " type="text" placeholder="Your Answer" name="an1" >
   						<br>
@@ -277,22 +275,22 @@ button:hover {
 <div class="tab">
   <div style="overflow:auto;">
     <div style="float:right;">
-      <button type="submit" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="submit" name="btn-submit" >Submit</button>
     </div>
   </div>
 </div>
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
+    <span class="step" id="nextBtn" onclick="nextPrev(1)"></span>
   </div>
 </form>
 
