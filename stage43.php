@@ -114,7 +114,7 @@
                 <!-- Right Side Navigation Button -->
                 <div class="navbar-collapse-right hidden-xs " >
                     <ul class="nav navbar-nav navbar-right btn-scroll">
-                        <li><a class="btn-nav" href="#contact-us-section">Get in Teach <i class="icon icon-arrow-right"></i></a></li>
+                        <li><a class="btn-nav" href="#contact-us-section">Get in Touch <i class="icon icon-arrow-right"></i></a></li>
                     </ul>
                 </div>
 
@@ -143,7 +143,7 @@
                                         <div class="heading-outer top-bottom relative">
                                             <div class="overflow p-t-40 p-l-40 p-r-40 p-b-40">
                                                 <div class="section-heading-outer">
-                                                    <h1 class="heading">You're <span class="color">Completed</span>, In this GAME</h1>
+                                                    <h1 class="heading">Congrats! <span class="color">You have Completed</span>, the GAME</h1>
                                                 </div>
                                             </div>
                                         </div>
